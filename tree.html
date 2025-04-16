@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Family Tree Builder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body class="bg-[#CDCBD6] text-[#2F3020] p-6 font-sans">
+  <h1 class="text-3xl font-bold mb-4">Build Your Tree</h1>
+  <form id="memberForm" class="bg-white p-4 rounded shadow mb-6 space-y-4">
+    <input type="text" id="fullName" placeholder="Full Name" class="p-2 w-full border rounded"/>
+    <input type="date" id="dob" class="p-2 w-full border rounded"/>
+    <textarea id="bio" placeholder="Short Bio" class="p-2 w-full border rounded"></textarea>
+    <button type="submit" class="bg-[#D96846] text-white px-4 py-2 rounded">Add Member</button>
+  </form>
+  <div id="memberList" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+</body>
+</html>
